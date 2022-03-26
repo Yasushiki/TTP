@@ -11,3 +11,14 @@ function mudar(id) {
     }
   }
 }
+
+function calc(data1, data2) {
+  return  Math.floor(( Date.parse(data1) - Date.parse(data2) ) / 86400000);
+}
+
+function apagar(classe, id) {
+  let confirmacao = confirm("Deseja apagar?");
+  if(confirmacao) {
+    window.location.href=`apagar.php?classe=${classe}&id=${id}`;
+  }
+}

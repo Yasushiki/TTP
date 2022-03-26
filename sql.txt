@@ -1,0 +1,24 @@
+CREATE DATABASE ttp;
+
+USE ttp;
+
+CREATE TABLE tarefa(
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  nome VARCHAR(50) NOT NULL,
+  descricao TEXT,
+  dia DATE
+);
+
+CREATE TABLE trabalho(
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  nome VARCHAR(50) NOT NULL,
+  descricao TEXT,
+  dia DATE
+);
+
+CREATE TABLE prova(
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  nome VARCHAR(50) NOT NULL,
+  descricao TEXT,
+  dia DATE
+);

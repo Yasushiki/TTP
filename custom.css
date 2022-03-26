@@ -22,3 +22,27 @@ header div {
 .hidden {
   display: none;
 }
+
+.botao {
+  width: 50px;
+  height: 50px;
+
+  text-align: center;
+  line-height: 50px;
+
+  background-color: #40e0d0;
+  border-radius: 50%;
+  position: fixed;
+
+  font-size: 25px;
+
+  right: 20px;
+  bottom: 20px;
+
+  text-decoration: none;
+  color: black;
+}
+
+.red {
+  background-color: red;
+}
