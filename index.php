@@ -111,7 +111,19 @@ if($result->num_rows > 0) {
           tr[i].style.backgroundColor = "orange";
         }
       }
+    </script>
 
+    <script type="text/javascript">
+      var table = document.getElementsByTagName("table");
+      var div = document.getElementsByClassName("ttp");
+
+      for(let i = 0; i<= table.length; i++) {
+        if(table[i].getElementsByTagName("tr")[1].style.backgroundColor == "red") {
+          div[i].innerText += "🔴";
+        } else if(table[i].getElementsByTagName("tr")[1].style.backgroundColor == "orange") {
+          div[i].innerText += "🟡";
+        }
+      }
     </script>
 
   </body>
